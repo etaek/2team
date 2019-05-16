@@ -70,8 +70,8 @@
 		<img class="bg"src="hotel4.jpg" />
 	</div>
 	<header style="text-align:right; width:1200px;">
-		<h4><a href="">Login</a></h4>
-		<h4><a href="">SignUp</a></h4>
+		
+		<h4><a href="">LogIn</a></h4>
 	</header>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -115,10 +115,10 @@
             }
         });
     </script>
-  <div class="container1" style="height:60px; padding-left:15px;padding-top:0px;width:175px;float:left;display:inline;">
-  <label style="padding-top:20px;">어른</label><br/>
+  <div class="container1" style="height:60px; padding-left:15px;padding-top:0px;width:300px;float:left;display:inline;">
+  <label style="padding-top:20px;">인원</label><br/>
 
-  <div class="input-group spinner"">
+  <div class="input-group spinner" >
     <div class="input-group-prepend" style="border-radius: 3px;" >
       <button class="btn text-monospace minus" id="sub"type="button"style="background-color:gray;">-</button>
     </div>
@@ -127,21 +127,7 @@
       <button class="btn text-monospace plus" id="add"type="button"style="background-color:gray;">+</button>
     </div>
   </div>
-</div>
-
- <div class="container1" style="height:60px; padding-left:15px;padding-top:0px;width:175px;float:left;display:inline;">
-  <label style="padding-top:20px;">아이</label><br/>
-  <div class="input-group spinner" >
-    <div class="input-group-prepend"style="border-radius: 3px;">
-      <button class="btn text-monospace minus" id="add"style="background-color:gray;" type="button">-</button>
-    </div>
-    <input type="number" class="count form-control" min="0" max="10" step="1" value="0">
-    <div class="input-group-append">
-      <button class="btn text-monospace plus" id="sub"style="background-color:gray;"type="button">+</button>
-    </div>
-  </div>
-</div>
-   
+</div>   
 	<div style="margin-top:120px;padding-left:278px;">
 		<button type="submit" class="btn btn-primary">Submit</button>
 		</div>
