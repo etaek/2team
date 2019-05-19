@@ -12,9 +12,9 @@ public class UserDAO {
 	
 	public UserDAO() {
 		try {
-			String dbURL= "jdbc:mysql://localhost:3306/Hotel";	//localhost:3306 -> ÄÄÇ»ÅÍ¿¡ ¼³Ä¡µÈ mysql¼­¹öÀÚÃ¼, HotelÀÌ¶ó´Â db¿¡Á¢¼Ó
+			String dbURL= "jdbc:mysql://localhost:3306/hotel";	//ìŠ¤í‚¤ë§ˆ ì´ë¦„ì— ëŒ€ë¬¸ì ì•ˆë¨! localhost:3306 -> ì»´í“¨í„°ì— ì„¤ì¹˜ëœ mysqlì„œë²„ìì²´, Hotelì´ë¼ëŠ” dbì—ì ‘ì†
 			String dbID = "root";
-			String dbPassword = ""; //root°èÁ¤ ºñ¹Ğ¹øÈ£ ³Ö±â
+			String dbPassword = "1234"; //rootê³„ì • ë¹„ë°€ë²ˆí˜¸ ë„£ê¸°
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
 		
@@ -32,16 +32,16 @@ public class UserDAO {
 			
 			if(rs.next()) {
 				if(rs.getString(1).equals(userPassword)) {
-					return 1; //·Î±×ÀÎ ¼º°ø
+					return 1; //ë¡œê·¸ì¸ ì„±ê³µ
 				}
 				else
-					return 0; //ºñ¹Ğ¹øÈ£°¡ Æ²¸².
+					return 0; //ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë¦¼.
 			}
-			return -1; //¾ÆÀÌµğ°¡ ¾øÀ½.
+			return -1; //ì•„ì´ë””ê°€ ì—†ìŒ.
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -2;	//µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -2;	//ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 	}
 	
 	public int join (User user) {
@@ -58,6 +58,6 @@ public class UserDAO {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
-		return -1;	//µ¥ÀÌÅÍº£ÀÌ½º ¿À·ù
+		return -1;	//ë°ì´í„°ë² ì´ìŠ¤ ì˜¤ë¥˜
 	}
 }
