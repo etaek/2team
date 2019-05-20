@@ -74,7 +74,7 @@
 	</div>
 	
 	<header style="text-align:right; width:1200px;">	
-		<h4><a id="log" href="login.jsp">LogIn</a></h4>
+		<h4>${sessionId}님 환영합니다. <a id="log" href="logout.jsp">Logout</a></h4>
 	</header>
 	
 	
