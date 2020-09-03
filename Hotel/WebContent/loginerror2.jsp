@@ -8,7 +8,7 @@
 </head>
 <body>
 <script>
-   self.window.alert("로그인정보가 일치하지 않습니다.");
+   self.window.alert("Login Fail!");
    location.href="login.jsp"; 
 
 </script>

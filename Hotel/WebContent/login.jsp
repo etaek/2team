@@ -34,19 +34,12 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a href="main.jsp">메인</a></li>
-				<li><a href="bbs.jsp">게시판</a></li>
+				<li><a href="list.jsp">후기 게시판</a></li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"
-					role="button" aria-haspopup="true" aria-expanded="false">
-					login<span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li class="active"><a href="login.jsp">로그인</a></li>
-						<li><a href="join.jsp">회원가입</a></li>
-					</ul>
-				</li>	
-			</ul>
+		<ul class="nav navbar-nav navbar-right">
+
+		<li><a class="nav-link"  id="active"  href="join.jsp">Join</a></li>
+	</ul>
 		</div>
 	</nav>
 	

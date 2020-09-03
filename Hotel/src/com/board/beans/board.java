@@ -6,6 +6,11 @@ public class board {
 	
 	//제목
 	private String subject;
+	//지역
+	private String area;
+	
+	//호텔 이름
+	private String hotelName;
 	
 	//내용
 	private String content;
@@ -31,11 +36,17 @@ public class board {
 	//검색내용
 	public String condition;
 	
-	public String getOpt() {
-		return opt;
+	public String getArea() {
+		return area;
 	}
-	public void setOpt(String opt) {
-		this.opt = opt;
+	public void setArea(String area) {
+		this.area = area;
+	}
+	public String getHotelName() {
+		return hotelName;
+	}
+	public void setHotelName(String hotelName) {
+		this.hotelName = hotelName;
 	}
 	public String getCondition() {
 		return condition;
